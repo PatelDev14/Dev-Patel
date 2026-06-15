@@ -17,8 +17,8 @@ src/
 │   ├── layout.js        # Root layout with metadata
 │   └── page.js          # Main page composing all sections
 ├── components/
-│   ├── Navbar.jsx       # Fixed navigation with mobile menu
-│   ├── Hero.jsx         # Hero section with intro and social links
+│   ├── Navbar.jsx       # Fixed navigation with mobile menu and Resume button
+│   ├── Hero.jsx         # Hero section with intro, social links, and Resume download
 │   ├── About.jsx        # About section with bio
 │   ├── Skills.jsx       # Skills organized by category
 │   ├── Experience.jsx   # Work experience timeline
@@ -26,16 +26,17 @@ src/
 │   ├── Contact.jsx      # Contact form and social links
 │   └── Footer.jsx       # Footer with copyright
 public/
-└── projects/            # Project images
+├── resume.pdf           # Resume (linked from Hero and Navbar)
+└── projects/            # Project images and app icons
 ```
 
 ## Key Features
 - Responsive design for all devices
 - Smooth scroll animations with Framer Motion
-- Interactive navigation with mobile hamburger menu
-- Skills categorized by type (Languages, AI/ML, Cloud, Tools, Soft Skills)
+- Interactive navigation with mobile hamburger menu and Resume button
+- Skills categorized by type (Languages, AI/ML, Cloud, Tools, Frameworks, Soft Skills)
 - Experience timeline with current position highlighted
-- Project cards with generated AI images
+- Project cards linking to App Store and Chrome Web Store
 - Contact form with email and social links
 
 
@@ -45,4 +46,4 @@ public/
 - **LinkedIn**: linkedin.com/in/devpatel7
 - **GitHub**: github.com/PatelDev14
 - **Twitter/X**: x.com/patel_dev7
-- **Current Role**: Software Developer Intern at CentralSquare Technologies
+- **Current Role**: Application Specialist at JANA Corporation
