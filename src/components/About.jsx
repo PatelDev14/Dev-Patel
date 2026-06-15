@@ -91,7 +91,7 @@ export default function About() {
                 I'm a Computer Science graduate from York University with a deep passion for building intelligent, full-stack applications that solve real-world problems.
               </p>
               <p className="text-gray-300 mt-4 leading-relaxed text-lg">
-                Currently interning at <span className="text-indigo-400 font-medium">CentralSquare Technologies</span>, where I design and develop enterprise Property Tax software used by local governments across North America.
+                Currently working as an <span className="text-indigo-400 font-medium">Application Specialist at JANA Corporation</span>, where I configure and implement enterprise software solutions, architect client system integrations, and administer SQL Server databases using T-SQL.
               </p>
               <p className="text-gray-300 mt-4 leading-relaxed text-lg">
                 I love blending modern web frameworks with AI/ML to create smart, fast, beautiful experiences — from AI email generators to mobile apps with semantic search.
@@ -111,7 +111,7 @@ export default function About() {
                   <div>
                     <h4 className="text-xl font-bold text-white">York University</h4>
                     <p className="text-indigo-400 font-medium">B.Sc. Computer Science (Honors)</p>
-                    <p className="text-gray-400 text-sm mt-1">September 2022 – September 2025</p>
+                    <p className="text-gray-400 text-sm mt-1">September 2022 – December 2025</p>
                     <div className="flex gap-2 mt-3">
                     </div>
                   </div>

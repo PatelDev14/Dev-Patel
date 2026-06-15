@@ -45,6 +45,14 @@ export default function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-indigo-500 to-purple-500 group-hover:w-full transition-all duration-300" />
             </a>
           ))}
+          <a
+            href="/projects/Dev Patel Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm font-medium hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300"
+          >
+            Resume
+          </a>
         </div>
 
         <button
@@ -68,6 +76,15 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
+            <a
+              href="/projects/Dev Patel Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-center px-5 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-sm font-medium"
+            >
+              Resume
+            </a>
           </div>
         </div>
       )}
