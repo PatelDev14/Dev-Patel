@@ -4,17 +4,31 @@ import { Building2, Calendar, MapPin } from 'lucide-react'
 
 const experiences = [
   {
+    title: 'Application Specialist',
+    company: 'JANA Corporation',
+    location: 'Aurora, Ontario (Hybrid)',
+    period: 'May 2026 – Present',
+    description: [
+      'System Implementation & Configuration: Engineering, configuring, and testing JANA\'s software products to meet unique client requirements, ensuring high-availability through rigorous model calibration and functional testing',
+      'Client Systems Integration: Partnering with client IT departments to architect and deploy seamless integrations between JANA solutions and existing enterprise systems, optimizing data flow and networking protocols',
+      'Technical Troubleshooting & Problem Solving: Diagnosing and resolving complex technical support queries and installation errors, designing robust engineering solutions and workaround procedures to maintain system uptime',
+      'Database Administration & T-SQL: Developing, implementing, and administering MS SQL Server databases and data collections, utilizing advanced Transact-SQL (T-SQL) for data management and scripting',
+      'Collaborative Feature Deployment: Working directly with product and development teams to roadmap new feature deployments while providing technical expertise to Business Analysts on optimal configuration strategies',
+    ],
+    current: true,
+  },
+  {
     title: 'Software Developer Intern',
     company: 'CentralSquare Technologies',
     location: 'Florida, USA (Fully Remote)',
-    period: 'August 2025 – Present',
+    period: 'August 2025 – May 2026',
     description: [
       'Contributing to the design, development, and testing of Property Tax software solutions for local government',
       'Writing, debugging, and maintaining code modules in .NET and web technologies',
       'Participating in Agile ceremonies (sprint planning, demos, retrospectives) and code reviews',
       'Working with C#, SQL Server, and REST APIs to deliver reliable features for municipal clients',
     ],
-    current: true,
+    current: false,
   },
   {
     title: 'Administrative Assistant',

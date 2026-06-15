@@ -7,7 +7,7 @@ const skillCategories = [
   {
     title: 'Programming Languages',
     icon: Code,
-    skills: ['JavaScript', 'Python', 'Java', 'C', 'SQL', 'ReactJS', 'NodeJS', 'Spring Boot', 'Swift', 'Dart'],
+    skills: ['JavaScript', 'Python', 'Java', 'C#', 'SQL', 'ReactJS', 'NodeJS', 'Spring Boot', 'Swift'],
     color: 'from-blue-500 to-cyan-500',
   },
   {
@@ -37,7 +37,7 @@ const skillCategories = [
   {
   title: 'Frameworks & Platforms',
   icon: Layers,   // ← import this from lucide-react
-  skills: ['Next.js', 'React Native', 'Flutter', 'Tailwind', 'Redux', 'Express', 'Spring MVC', 'FastAPI'],
+  skills: ['Next.js', 'React Native', 'Tailwind', 'Redux', 'Express', 'Spring MVC', 'FastAPI'],
   color: 'from-pink-500 to-rose-500',
 },
 ]

@@ -1,32 +1,32 @@
 'use client'
 
-import { Github, Smartphone, Brain, Mail } from 'lucide-react'
+import { Smartphone, Heart, Mail, ExternalLink } from 'lucide-react'
 
 const projects = [
   {
     title: 'DriveBay',
-    description: 'An AI-driven parking availability and driveway-rental platform. Built with SwiftUI, Firebase, and the Gemini API, featuring a scalable, responsive UI for frictionless parking discovery and driveway-rental transactions.',
-    image: '/projects/drivebay.png',
+    description: 'A parking availability and driveway-rental platform. Built with SwiftUI, Firebase, and the Gemini API, featuring a scalable, responsive UI for frictionless parking discovery and driveway-rental transactions.',
+    image: '/projects/AppIcon.jpg',
     tags: ['SwiftUI', 'Firebase', 'Gemini API', 'iOS'],
-    github: 'https://github.com/PatelDev14/DriveBayApp',
+    link: 'https://apps.apple.com/ca/app/drivebay-private-parking/id6759207556',
     icon: Smartphone,
     gradient: 'from-blue-500 to-cyan-500',
   },
   {
-    title: 'NearMe AI',
-    description: 'A cross-platform Flutter app integrating OpenAI APIs, Firebase, and Node.js backend for intelligent local search and chat experiences. Features real-time AI responses and dynamic location-based results.',
-    image: '/projects/nearme.png',
-    tags: ['Flutter', 'Dart', 'OpenAI', 'Firebase', 'Node.js'],
-    github: 'https://github.com/PatelDev14/NearMe_AI',
-    icon: Brain,
-    gradient: 'from-purple-500 to-pink-500',
+    title: 'CheckMe',
+    description: 'A privacy-first health-tech app for offline ingredient analysis, built with SwiftUI and Apple Foundation Models. On-device AI personalizes ingredient assessments to your health profile, with Vision framework label OCR, SwiftData persistence, and an MVVM architecture — all without sending data to a server.',
+    image: '/projects/checkme.png',
+    tags: ['SwiftUI', 'Apple Foundation Models', 'SwiftData', 'iOS'],
+    link: 'https://apps.apple.com/ca/app/checkme/id6771952878',
+    icon: Heart,
+    gradient: 'from-emerald-500 to-teal-500',
   },
   {
     title: 'AI Email Reply Generator',
     description: 'A full-stack solution integrating Gemini API with Spring Boot backend and React frontend to generate AI-powered email replies. Includes a Chrome extension for seamless Gmail integration for your daily use.',
     image: '/projects/email.png',
     tags: ['React', 'Spring Boot', 'Gemini API'],
-    github: 'https://chromewebstore.google.com/detail/email-writer-assitant/hoicdbjgabhafafplokoidcckmafbdmi',
+    link: 'https://chromewebstore.google.com/detail/email-writer-assitant/hoicdbjgabhafafplokoidcckmafbdmi',
     icon: Mail,
     gradient: 'from-indigo-500 to-purple-500',
   },
@@ -48,10 +48,10 @@ export default function Projects() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={project.title} className="group">
-              <div className="gradient-border h-full overflow-hidden hover:glow transition-all duration-500">
+              <div className="gradient-border h-full overflow-hidden hover:glow transition-all duration-500 flex flex-col">
                 <div className="h-48 relative overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
@@ -60,8 +60,8 @@ export default function Projects() {
                     <project.icon className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                
-                <div className="p-6">
+
+                <div className="p-6 flex-1 flex flex-col">
                   <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-indigo-400 transition-colors">
                     {project.title}
                   </h3>
@@ -80,16 +80,15 @@ export default function Projects() {
                     ))}
                   </div>
                   
-                  {/* <div className="flex gap-4"> */}
                   <div className="flex justify-center mt-auto pt-4 border-t border-white/10">
                     <a
-                      href={project.github}
+                      href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
                     >
-                      <Github className="w-4 h-4" />
-                      <span>View Code</span>
+                      <ExternalLink className="w-4 h-4" />
+                      <span>{project.link.includes('apps.apple.com') ? 'View on App Store' : 'View on Chrome Store'}</span>
                     </a>
                   </div>
                 </div>

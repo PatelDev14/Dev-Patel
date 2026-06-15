@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Linkedin, Twitter, Mail, ArrowDown } from 'lucide-react'
+import { Github, Linkedin, Twitter, Mail, ArrowDown, Download } from 'lucide-react'
 
 export default function Hero() {
   return (
@@ -15,7 +15,7 @@ export default function Hero() {
         <div className="text-center">
           <div className="mb-6 animate-fade-in">
             <span className="inline-block px-4 py-2 rounded-full glass text-sm text-indigo-400 border border-indigo-500/30">
-              Software Developer Intern @ CentralSquare Technologies
+              Application Specialist @ JANA Corporation
             </span>
           </div>
 
@@ -41,6 +41,15 @@ export default function Hero() {
               className="px-8 py-3 rounded-full border border-indigo-500/50 text-white font-medium hover:bg-indigo-500/10 transition-all duration-300"
             >
               Get In Touch
+            </a>
+            <a
+              href="/projects/Dev Patel Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 rounded-full border border-indigo-500/50 text-white font-medium hover:bg-indigo-500/10 transition-all duration-300 flex items-center gap-2"
+            >
+              <Download className="w-4 h-4" />
+              Resume
             </a>
           </div>
 
